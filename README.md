@@ -1,75 +1,87 @@
-# React + TypeScript + Vite
+# 🧭 Reusable Navbar (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and reusable navigation bar component built with **React** and **Vite**.  
+This project demonstrates modular design, clean styling, and easy integration into larger applications.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+[View Project](https://himanshu-kumar-2301.github.io/fcc-reusable-navbar/)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- React (with Hooks)
+- Vite (fast build tool)
+- TypeScript
+- CSS3 (responsive styling)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📸 Screenshots
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+![Navbar Screenshot](./assets/screenshot.gif)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## 📚 Features
+
+- ✅ Responsive design (mobile, tablet, desktop)
+- ✅ Reusable component structure
+- ✅ Toggle menu for smaller screens
+- ✅ Semantic HTML for accessibility
+- ✅ Easy integration into other React projects
+
+---
+
+## 📂 Project Structure
+
+```code
+root/
+|--src/
+|  |--App.tsx
+|  |--main.tsx
+|  └--styles.css
+|--public/
+|--vite.config.ts
+|--package.json
+└--README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧑‍💻 How to Run Locally
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Clone the repo:
+
+    ```bash
+    git clone <https://github.com/himanshu-kumar-2301/fcc-reusable-navbar.git>
+    ```
+
+2. Navigate into the folder:
+
+    ```bash
+    cd fcc-reusable-navbar
+    ```
+
+3. Install dependencies
+
+    ``bash
+    npm install
+
+    ```
+
+4. Start the dev server
+
+    ```bash
+    npm run dev
+    ```
+
+## 📌 Future improvements
+
+- Add dropdown menus for multi-level navigation
+- Improve accessibility with ARIA attributes
+- Add dark/light theme toggle
+- Include unit tests for component reliability
